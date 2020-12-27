@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebView2Test", "WebView2Test.csproj", "{A7031C45-F428-43BE-9A0A-4FD6C2D01A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewCtrl", "WebViewCtrl\WebViewCtrl.csproj", "{DFCC7CDB-FD43-484C-AAA0-B8E0FC521FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7031C45-F428-43BE-9A0A-4FD6C2D01A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7031C45-F428-43BE-9A0A-4FD6C2D01A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7031C45-F428-43BE-9A0A-4FD6C2D01A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7031C45-F428-43BE-9A0A-4FD6C2D01A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCC7CDB-FD43-484C-AAA0-B8E0FC521FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCC7CDB-FD43-484C-AAA0-B8E0FC521FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCC7CDB-FD43-484C-AAA0-B8E0FC521FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCC7CDB-FD43-484C-AAA0-B8E0FC521FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EA68783-700F-460F-86F9-21F7A35DF52F}
+	EndGlobalSection
+EndGlobal
