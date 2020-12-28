@@ -16,5 +16,10 @@ namespace WebView2Test
         {
             InitializeComponent();
         }
+
+        private void TestDialog_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.userControl11.Dispose();
+        }
     }
 }

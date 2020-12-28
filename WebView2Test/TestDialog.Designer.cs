@@ -47,6 +47,7 @@
             this.Controls.Add(this.userControl11);
             this.Name = "TestDialog";
             this.Text = "TestDialog";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TestDialog_FormClosed);
             this.ResumeLayout(false);
 
         }
