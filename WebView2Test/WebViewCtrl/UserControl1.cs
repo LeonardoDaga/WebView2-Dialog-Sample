@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Web.WebView2.Core;
 
 namespace WebViewCtrl
 {
@@ -21,7 +22,15 @@ namespace WebViewCtrl
 
         private async void UserControl1_Load(object sender, EventArgs e)
         {
-            await webBrowser.EnsureCoreWebView2Async(null);
+            // Select a folder where to host the browser cache
+            var userDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\WebView2Test";
+
+            // Create the environment. The first argument is null to indicate to use To create WebView2 controls that use 
+            // the installed version of the WebView2 Runtime that exists on user machines 
+            var env = await CoreWebView2Environment.CreateAsync(null, userDataFolder);
+
+            // Pass the environment as argument
+            await webBrowser.EnsureCoreWebView2Async(env);
 
             webBrowser.NavigationStarting += WebBrowser_NavigationStarting;
         }
